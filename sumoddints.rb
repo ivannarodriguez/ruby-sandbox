@@ -9,9 +9,9 @@ pp numbers
 sum = 0
 
 numbers.each do |n|
-  number = n.to_i
-  if number.odd?
-    sum += number
+  n = n.to_i
+  if n.odd?
+    sum += n
   end
 end
 
