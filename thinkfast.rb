@@ -14,7 +14,7 @@ some_random_input = unpredictable_inputs.sample
 if some_random_input.class == String
   pp some_random_input.downcase
 elsif some_random_input.class == Time
-  pp some_random_input.day
+  pp some_random_input.strftime("%A").downcase # find day of week
 elsif some_random_input.class == Integer
   if some_random_input.odd?
     pp "#{some_random_input} is odd"
